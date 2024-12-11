@@ -27,14 +27,16 @@ pip3 install numpy matplotlib
 python3 simple_pendulum.py
 ```
 
-# Results
+## Results
 
 ### Simple Pendulum
 
-The integrator was applied to simulate the simple pendulum. The following figure shows the results energy conservation of the simulation over time.
+The integrator was applied to simulate the simple pendulum. The following figure shows the energy conservation of the system over time.
 
-![simple_pendulum_energy](examples/energy_conservation.png)
-
+<p align="center">
+  <img src="examples/energy_conservation.png" alt="simple_pendulum_energy">
+</p>
 
 ## Contributing
+
 Contributions are welcome.
