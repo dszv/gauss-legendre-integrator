@@ -43,4 +43,4 @@ Contributions are welcome.
 
 ## References
 
-- Butcher, J. C. (1964). *Implicit Runge-Kutta processes*. *Mathematics of Computation*, 18, 50-64. [Link to paper](https://api.semanticscholar.org/CorpusID:120245263).
+- Butcher, J. C. (1964). *Implicit Runge-Kutta processes*. *Mathematics of Computation*, 18, 50-64.
