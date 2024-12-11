@@ -1,5 +1,5 @@
-# Gauss-Legendre DE Solver
-A Python implementation of the Gauss-Legendre method for solving differential equations (DE) with high precision, featuring applications to energy-conserving systems.
+# Gauss-Legendre Solver
+A implementation of the Gauss-Legendre method for solving differential equations with high precision, featuring applications to energy-conserving systems.
 
 ## Features
 - **High Precision Calculations**: Uses `np.float128` for numerical stability.  
@@ -36,10 +36,6 @@ The integrator was applied to simulate the simple pendulum. The following figure
 <p align="center">
   <img src="examples/energy_conservation.png" alt="simple_pendulum_energy">
 </p>
-
-## Contributing
-
-Contributions are welcome.
 
 ## References
 
