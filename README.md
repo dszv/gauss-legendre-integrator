@@ -33,7 +33,7 @@ python3 simple_pendulum.py
 
 The integrator was applied to simulate the simple pendulum. The following figure shows the results energy conservation of the simulation over time.
 
-![simple_pendulum_energy](examples/energy_conservation.pdf)
+![simple_pendulum_energy](examples/energy_conservation.png)
 
 
 ## Contributing
