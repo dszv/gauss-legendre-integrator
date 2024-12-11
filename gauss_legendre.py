@@ -1,15 +1,15 @@
 import numpy as np
 
 # 8th-order Gauss-Legendre Integrator
-def gl8(y, f, dt, eps):
+def gl8(y, f, dt):
     """
     Perform an 8th-order Gauss-Legendre integration.
 
     Parameters:
     y  : array-like, the initial values at time t
     f  : function, the function to integrate (e.g., the system of DEs)
-    dt : float, the time step for the integration; should be small enough to ensure the Lipschitz condition of function f (see references for a detailed explanation)
-    eps: float, tolerance level
+    dt : float, the time step for the integration; should be small enough to ensure 
+    the Lipschitz condition of function f (see references for a detailed explanation)
     
     Returns:
     array-like : the updated values after the integration step
@@ -46,7 +46,7 @@ def gl8(y, f, dt, eps):
         
         # check convergence by comparing the new and previous g values
         error = np.max(np.abs(g - gprev))
-        if error < eps:
+        if error < 1.e-18: # can be changed for a more/less restrictive tolerance level
             break
     
     return y + dt * np.dot(b, g)

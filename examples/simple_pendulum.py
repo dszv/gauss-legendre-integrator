@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 8th-order gauss-legendre integrator
-def gl8(y, f, dt, eps):
+def gl8(y, f, dt):
     w1p = np.float128(1/8 + np.sqrt(30)/144)
     w1m = np.float128(1/8 - np.sqrt(30)/144)
     w2p = np.float128(1/2 * np.sqrt((15 + 2*np.sqrt(30)) / 35 ))
@@ -30,7 +30,7 @@ def gl8(y, f, dt, eps):
         for j in range(4):
             g[j] = f(y + dt * g[j])
         error = np.max(np.abs(g - gprev))
-        if error < eps:
+        if error < 1.e-18:
             break
     return y + dt * np.dot(b, g)
 
@@ -52,9 +52,8 @@ Y = np.zeros((TT, 2), dtype = np.float128)
 Y[0] = y0
 
 # time integration
-eps = 1.e-18
 for t in range(1, TT):
-    Y[t] = gl8(Y[t - 1], f, dt, eps)
+    Y[t] = gl8(Y[t - 1], f, dt)
 
 # energy conservation
 theta, omega = Y[0, 0], Y[0, 1]
