@@ -3,15 +3,18 @@ A Python implementation of the Gauss-Legendre method for solving differential eq
 
 ## Features
 - **High Precision Calculations**: Uses `np.float128` for numerical stability.  
-- **Energy Analysis**: Tracks and visualizes energy conservation throughout the simulation.  
-- **Customizable and Extendable**: Easily adaptable to other ODE systems.  
+- **Energy Analysis**: Ensures energy conservation throughout the simulation.  
+- **Customizable and Extendable**: Easily adaptable to other DE systems.  
 
 ## Getting Started
 To run the project locally:
 
 1. Clone the repository.
+```gh repo clone dszv/gauss-legendre-integrator```
 2. Install the required dependencies.
+```pip3 install numpy matplotlib```
 3. Run one of the example scripts.
+```python3 simple_pendulum.py```
 
 ## Contributing
 Contributions are welcome.
