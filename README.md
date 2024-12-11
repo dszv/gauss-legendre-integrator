@@ -9,19 +9,19 @@ A Python implementation of the Gauss-Legendre method for solving differential eq
 ## Getting Started
 To run the project locally:
 
-1. Clone the repository.
+1. Clone the repository:
 
 ```bash
 gh repo clone dszv/gauss-legendre-integrator
 ```
 
-2. Install the required dependencies.
+2. Install the required dependencies:
 
 ```bash
 pip3 install numpy matplotlib
 ```
 
-3. Run one of the example scripts.
+3. Run one of the example scripts:
 
 ```bash
 python3 simple_pendulum.py
