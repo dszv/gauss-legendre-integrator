@@ -1,5 +1,5 @@
 # Gauss-Legendre Solver
-A implementation of the Gauss-Legendre method for solving differential equations with high precision, featuring applications to energy-conserving systems.
+An implementation of the Gauss-Legendre method for solving differential equations with high precision, featuring applications to energy-conserving systems.
 
 ## Features
 - **High Precision Calculations**: Uses `np.float128` for numerical stability.  
